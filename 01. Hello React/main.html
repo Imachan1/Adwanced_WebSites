@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="UTF-8">
-        <title>React wstęp</title>
-    </head>
-    <body>
-        <div id="app"></div>
-        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
         <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
         <script type="text/babel">
-            function Witaj()
-                {
-                    let a = prompt("Jak masz na imie?")
-                    return<p>{a} witaj w funkcji Witaj</p>
-                };
+            function Witaj() {
+                let a = prompt("Jak masz na imię?");
+                return <p>{a} witaj w funkcji Witaj</p>
+            }
 
-            function App()
-                {
-                    return
-                    (
-                        <div>
-                            <h2>Hello world!</h2>
-                            <Witaj/>
-                        </div>
-                    );
-                };
+            function App() {
+                return (
+                    <div>
+                        <h2>Hello world!</h2>
+                        <Witaj/>
+                    </div>
+                );
+            }
 
             const root = ReactDOM.createRoot(document.getElementById('app'));
             root.render(<App/>)
-        </script>
-    </body>
+    </script>
+
+</body>
 </html>
